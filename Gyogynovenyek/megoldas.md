@@ -40,12 +40,27 @@
 ## 2.feladat:
 - Milyen gyűjthető részek vannak?
 - Hány darab van ezekből?
+- adatszerk.: dictionary<string, int>
+  - foreach "novenyek"
+  - ha Resz nem kulcs --> akkor adjuk hozzá nullával
+  - foreach "novenyek"
+  - ha a Resz = Key akkor a Value-t növeljük 1-el
 
 ## 3.feladar:
 - Maximum keresés az időtartam lapján
+  - maximum változó=0
+  - foreach "novenyek"
+  - ha max < idotartam --> max = idotartam
 - növények amelyek a legtöbb ideig szedtek
+  - foreach "novenyek"
+  - kiírnia ha időtartam = max
 
 ## 4.feladat:
 - Időtartam átlag számítás
+  - sum=0
+  - atlag valt
+  - foreach
+  - sum+=Idotartam
+  - atlag=sum/count
  
 
