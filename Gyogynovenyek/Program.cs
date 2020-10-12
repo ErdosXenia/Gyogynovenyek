@@ -61,7 +61,7 @@ namespace Gyogynovenyek
             int max = 0;
             foreach (var n in novenyek)
             {
-                if (max<n.Idotartam)
+                if (max < n.Idotartam)
                 {
                     max = n.Idotartam;
                     
@@ -72,7 +72,7 @@ namespace Gyogynovenyek
 
             foreach (var n in novenyek)
             {
-                if (n.Idotartam==max)
+                if (n.Idotartam == max)
                 {
                     Console.WriteLine("Növény(ek): \n{0}",n.Nev);
                 }
@@ -82,12 +82,13 @@ namespace Gyogynovenyek
         static void feladat4()
         {
             double sum = 0;
-            double atlag = 0;
+            //double atlag = 0;
             foreach (var n in novenyek)
             {
                 sum += n.Idotartam;
             }
-            Console.WriteLine("\n4. Feladat: Átlagos gyűjthető időtartam: {0}", atlag = sum / novenyek.Count);
+            //Console.WriteLine("\n4. Feladat: Átlagos gyűjthető időtartam: {0}", atlag = sum / novenyek.Count);
+            Console.WriteLine("\n4. Feladat: Átlagos gyűjthető időtartam: {0:N2}", sum / novenyek.Count);
         }
 
         static void Main(string[] args)
